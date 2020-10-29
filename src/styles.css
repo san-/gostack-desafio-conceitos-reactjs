@@ -6,23 +6,10 @@
 
 body {
   font-size: 14px;
+  width: 400px;
 }
 
-div {
-  width: 100%;
-  margin: 20px;
-}
-
-div li {
-  display: flex;
-  align-items: center;
-}
-
-div li + li {
-  margin-top: 15px;
-}
-
-button {
+button.adicionar {
   background: #7159c1;
   color: #fff;
   border: 0;
@@ -33,7 +20,51 @@ button {
   font-size: 14px;
 }
 
-div li button {
-  margin: 0 15px;
+button.remover {
   background: #ca4949;
+  color: #fff;
+  border: 0;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.repository-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.repository-form label{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.repository-form label input{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  max-width: 200px;
+  
+}
+
+.error {
+  padding: 20px;
+  background-color: #f44336; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+span.tech{
+  display: inline-block;
+  min-width: 1px; /* pixel unit */
+  padding: 2px 2px; /* pixel unit */
+  border-radius: 12%;
+  text-align: center;
+  background: #1779ba;
+  color: #fefefe;
+  margin-left: 5px;
 }
